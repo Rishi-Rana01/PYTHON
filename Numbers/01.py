@@ -27,4 +27,9 @@ import random
 random=random.randint(0,10)
 print(random)
 
-
+# Sets in Py
+setone= {1,2,3,4}
+result1= setone & {1,3}
+result2= setone | {1,3}
+result3= setone - {1,3}
+print(result1,result2,result3)
