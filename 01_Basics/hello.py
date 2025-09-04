@@ -5,5 +5,5 @@ def greet(name):
 
 greet("Rishi Rana")
 
-greet_1="Ankush";
+greet_1="Ankush"
 greet_2="ch"
