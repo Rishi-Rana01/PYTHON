@@ -40,12 +40,12 @@ class ElectricCar(Car):
         print(f"Battery Capacity: {self.battery_capacity} kWh")
         print(f"Fuel Type: {self.fuel_type()}")
 
-my_car = Car("Toyota", "Corolla")
-my_car.display_info()
+# my_car = Car("Toyota", "Corolla")
+# my_car.display_info()
 
 
 
-my_tesla = ElectricCar("Tesla", "Model S", 100)
-my_tesla.display_info()
+# my_tesla = ElectricCar("Tesla", "Model S", 100)
+# my_tesla.display_info()
 
-print(Car.total_car)
+# print(Car.total_car)
