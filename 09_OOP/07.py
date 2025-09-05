@@ -1,11 +1,11 @@
-#Total car
+#Static Method
 
 class Car:
     total_car = 0
     def __init__(self, brand, model):
         self.__brand = brand
         self.model = model
-        Car.total += 1
+        Car.total_car += 1
 
     def get_brand(self):
         return self.__brand
@@ -15,12 +15,17 @@ class Car:
     
     def fuel_type(self):
         return "Petrol or Diesel"
+    
+    @staticmethod
+    def general_des():
+        return "Cars use for transportation"
 
     def display_info(self):
         print(f"Car Brand: {self.__brand}")
         print(f"Car Model: {self.model}")
         print(f"Car Full Name: {self.full_name()}")
         print(f"Fuel Type: {self.fuel_type()}")
+        print(f"Descriptiion: {Car.general_des()}")
 
 class ElectricCar(Car):
     def __init__(self, brand, model, battery_capacity):
